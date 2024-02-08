@@ -18,7 +18,7 @@ body{
     background-color: #000;
 }
 
-img#profile-pic {
+#profile-pic {
     object-fit:cover;
     object-position: top;
     /* clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 50%); */
@@ -34,13 +34,10 @@ img#profile-pic {
     background-size: cover;
 }
 
-button{
-    background-color: #005B41;
-}
 
-a{
-    color: inherit;
+.portfolio-card h3{
     text-decoration: none;
+    font-size: 2.5rem;
 }
 
 body{
@@ -146,6 +143,8 @@ span.experiencia{
     margin: 0 0 20px 0;
     overflow: hidden;
     white-space: nowrap;
+    text-wrap:balance;
+    text-align: center;
     text-overflow: ellipsis;
     line-height: 150%;
 }
@@ -205,6 +204,17 @@ span.experiencia{
     .timeline {
         padding: 15px;
     }
+
+    span.experiencia{
+        background-color: var(--dark-blue);
+        margin-top: 50px;
+        width: 100%;
+        color: white;
+        font-size: 1rem;
+        border: 15px solid var(--dark-blue);
+        text-align: center;
+    }
+
     .timeline:after {
         border: 0;
     }
